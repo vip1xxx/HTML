@@ -10,6 +10,7 @@
       align-items: center;
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #c3ffff;
     }
 
     h1 {
@@ -19,15 +20,11 @@
     }
 
     .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin-top: 20px;
     }
 
     .row {
       display: flex;
-      gap: 5px;
       margin-bottom: 5px;
     }
 
@@ -35,11 +32,21 @@
       width: 250px;
       height: 250px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 16px;
+      font-size: 22px;
       font-weight: bold;
+      border: 2px solid black;
+      box-sizing: border-box;
+      box-shadow: 10px 11px 5px -6px rgb(16, 14, 15);
+      -webkit-box-shadow: 10px 11px 5px -6px rgb(16, 14, 15);
+      -moz-box-shadow: 10px 11px 5px -6px rgb(16, 14, 15);
+    }
+
+    .color-block + .color-block {
+      margin-left: 5px;
     }
 
     .black {
@@ -62,24 +69,81 @@
       background-color: pink;
       color: black;
     }
+
+    .white {
+      background-color: white;
+      color: black;
+    }
+
+    .yellow {
+      background-color: yellow;
+      color: black;
+    }
+
+    .purple {
+      background-color: purple;
+    }
+
+    .maroon {
+      background-color: maroon;
+    }
+
+    .olive {
+      background-color: olive;
+    }
+
+    .tag {
+      font-size: 16px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
 <h1>HTML COLORS</h1>
 <div class="container">
   <div class="row">
-    <div class="color-block black">BLACK</div>
-    <div class="color-block red">RED</div>
-    <div class="color-block green">GREEN</div>
-    <div class="color-block blue">BLUE</div>
-    <div class="color-block pink">PINK</div>
+    <div class="color-block black">
+      BLACK
+      <div class="tag">#000000</div>
+    </div>
+    <div class="color-block red">
+      RED
+      <div class="tag">#FF0000</div>
+    </div>
+    <div class="color-block green">
+      GREEN
+      <div class="tag">#008000</div>
+    </div>
+    <div class="color-block blue">
+      BLUE
+      <div class="tag">#00008B</div>
+    </div>
+    <div class="color-block pink">
+      PINK
+      <div class="tag">#FFC0CB</div>
+    </div>
   </div>
   <div class="row">
-    <div class="color-block black">BLACK</div>
-    <div class="color-block red">RED</div>
-    <div class="color-block green">GREEN</div>
-    <div class="color-block blue">BLUE</div>
-    <div class="color-block pink">PINK</div>
+    <div class="color-block white">
+      WHITE
+      <div class="tag">#FFFFFF</div>
+    </div>
+    <div class="color-block yellow">
+      YELLOW
+      <div class="tag">#FFFF00</div>
+    </div>
+    <div class="color-block purple">
+      PURPLE
+      <div class="tag">#800080</div>
+    </div>
+    <div class="color-block maroon">
+      MAROON
+      <div class="tag">#800000</div>
+    </div>
+    <div class="color-block olive">
+      OLIVE
+      <div class="tag">#808000</div>
+    </div>
   </div>
 </div>
 </body>

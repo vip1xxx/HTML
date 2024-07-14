@@ -2,151 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HTML COLORS</title>
+  <title>Карткові символи</title>
   <style>
     body {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #c3ffff;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 36px;
-      margin-top: 20px;
-    }
-
-    .container {
-      margin-top: 20px;
+      background-color: #edff02;
     }
 
     .row {
       display: flex;
-      margin-bottom: 5px;
+      justify-content: space-around;
+      width: 100%;
+      margin: 10px 0;
     }
 
-    .color-block {
-      width: 250px;
-      height: 250px;
+    .card {
+      width: 120px;
+      height: 200px;
+      border: 1px solid black;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      color: white;
-      font-size: 22px;
+      align-items: center;
+      font-size: 24px;
+      margin: 5px;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 10px 10px 5px 0 rgba(0,102,255,1);
+      -webkit-box-shadow: 10px 10px 5px 0 rgba(0,102,255,1);
+      -moz-box-shadow: 10px 10px 5px 0 rgba(0,102,255,1);
+    }
+    .card:hover{
+      transform: scale(1.3);
+    }
+
+    .hearts {
+      color: red;
+    }
+
+    .diamonds {
+      color: red;
+    }
+
+    .clubs {
+      color: black;
+    }
+
+    .spades {
+      color: black;
+    }
+
+    .label {
       font-weight: bold;
-      border: 2px solid black;
-      box-sizing: border-box;
-      box-shadow: 10px 11px 5px -6px rgb(16, 14, 15);
-      -webkit-box-shadow: 10px 11px 5px -6px rgb(16, 14, 15);
-      -moz-box-shadow: 10px 11px 5px -6px rgb(16, 14, 15);
-    }
-
-    .color-block + .color-block {
-      margin-left: 5px;
-    }
-
-    .black {
-      background-color: black;
-    }
-
-    .red {
-      background-color: red;
-    }
-
-    .green {
-      background-color: green;
-    }
-
-    .blue {
-      background-color: darkblue;
-    }
-
-    .pink {
-      background-color: pink;
-      color: black;
-    }
-
-    .white {
-      background-color: white;
-      color: black;
-    }
-
-    .yellow {
-      background-color: yellow;
-      color: black;
-    }
-
-    .purple {
-      background-color: purple;
-    }
-
-    .maroon {
-      background-color: maroon;
-    }
-
-    .olive {
-      background-color: olive;
-    }
-
-    .tag {
-      font-size: 16px;
-      margin-top: 10px;
+      margin: 10px 0;
     }
   </style>
 </head>
 <body>
-<h1>HTML COLORS</h1>
-<div class="container">
-  <div class="row">
-    <div class="color-block black">
-      BLACK
-      <div class="tag">#000000</div>
-    </div>
-    <div class="color-block red">
-      RED
-      <div class="tag">#FF0000</div>
-    </div>
-    <div class="color-block green">
-      GREEN
-      <div class="tag">#008000</div>
-    </div>
-    <div class="color-block blue">
-      BLUE
-      <div class="tag">#00008B</div>
-    </div>
-    <div class="color-block pink">
-      PINK
-      <div class="tag">#FFC0CB</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="color-block white">
-      WHITE
-      <div class="tag">#FFFFFF</div>
-    </div>
-    <div class="color-block yellow">
-      YELLOW
-      <div class="tag">#FFFF00</div>
-    </div>
-    <div class="color-block purple">
-      PURPLE
-      <div class="tag">#800080</div>
-    </div>
-    <div class="color-block maroon">
-      MAROON
-      <div class="tag">#800000</div>
-    </div>
-    <div class="color-block olive">
-      OLIVE
-      <div class="tag">#808000</div>
-    </div>
-  </div>
+<div class="label">Гравець 2</div>
+<div class="row">
+  <div class="card hearts">3&#x2665;</div>
+  <div class="card clubs">A&#x2663;</div>
+  <div class="card clubs">10&#x2663;</div>
+  <div class="card diamonds">K&#x2666;</div>
+  <div class="card spades">8&#x2660;</div>
+  <div class="card hearts">3&#x2665;</div>
+</div>
+
+<div class="label">Гравець 1</div>
+<div class="row">
+  <div class="card clubs">2&#x2663;</div>
+  <div class="card hearts">9&#x2665;</div>
+  <div class="card hearts">6&#x2665;</div>
+  <div class="card diamonds">A&#x2666;</div>
+  <div class="card spades">Q&#x2660;</div>
+  <div class="card clubs">J&#x2663;</div>
 </div>
 </body>
 </html>
+
 
 
