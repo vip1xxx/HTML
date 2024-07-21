@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.w-1070{
+    width: 1070px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+nav ul a{
+    text-decoration: none;
+    color: #696871;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.469px;
+}
+header button{
+    width: 211.02px;
+    height: 60px;
+    border-radius: 10px;
+    background: #FF7143;
+    border: none;
+    color: #FFF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+
+}
+
+.subscription-business{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 68px;
+}
+.subscription-business h1{
+    color: #19191B;
+    font-family: "DM Sans", sans-serif;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 77px; /* 102.667% */
+    letter-spacing: -2.501px;
+}
+
+.subscription-business p{
+    color: #696871;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.625px;
+    margin: 30px 0 50px 0;
+    width: 409.426px;
+}
+
+.subscription-business button{
+    width: 188.211px;
+    height: 60px;
+    border-radius: 10px;
+    background: #5454D4;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.531px;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 0 160px 0;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.right h1{
+    color: #19191B;
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px; /* 114% */
+    letter-spacing: -1.563px;
+}
+.right p{
+    color: #696871;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.625px;
+    margin: 30px 0 30px 0;
+}
+.right a{
+    color: #5454D4;
+    font-family: "DM Sans",sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    letter-spacing: -0.531px;
+}
+.info{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+.left-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.right-box{
+   width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-box h1{
+    color: #19191B;
+    font-family: "DM Sans",sans-serif;
+    font-size: 50px;
+    line-height: 57px; /* 114% */
+    letter-spacing: -1.563px;
+}
+.left-box p{
+    margin: 30px 0 30px 0;
+    color: #696871;
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.625px;
+}
+.left-box a{
+    color: #5454D4;
+    font-family: "DM Sans",sans-serif;
+    font-size: 17px;
+    letter-spacing: -0.531px;
+    text-decoration: none;
+}
+
+aside {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.block img {
+    width: 118px;
+    height: 63px;
+    flex-shrink: 0;
+    display: block;
+}
+
+.block h2 {
+    margin: 10px 0 5px;
+    color: #19191B;
+    text-align: center;
+    font-family: "DM Sans",sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.75px;
+}
+
+.block p {
+    margin: 5px 0 0;
+    color: #696871;
+    text-align: center;
+    font-family: Mulish,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+}
+

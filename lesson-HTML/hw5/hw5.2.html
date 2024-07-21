@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagonal Circle Preloader</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .circle {
+            width: 40px;
+            height: 40px;
+            background-color: #00ff00;
+            border-radius: 50%;
+            position: absolute;
+            animation: move-diagonal 3s infinite linear;
+        }
+
+        @keyframes move-diagonal {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            25% {
+                top: calc(100vh - 40px);
+                left: calc(100vw - 40px);
+            }
+            50% {
+                top: 0;
+                left: calc(100vw - 40px);
+            }
+            75% {
+                top: calc(100vh - 40px);
+                left: 0;
+            }
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="circle"></div>
+</body>
+</html>
+
+
