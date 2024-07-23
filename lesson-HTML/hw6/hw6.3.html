@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            width: 35vw;
+            height: 60vh;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container img {
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container button {
+            width: 34vw;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #3074c9;
+        }
+        .login-container .separator {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .login-container .separator hr {
+            flex-grow: 1;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+        .login-container .separator span {
+            margin: 0 10px;
+            color: #999;
+        }
+        .login-container .facebook-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3897f0;
+            font-weight: bold;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        .login-container .facebook-login img {
+            margin-right: 10px;
+        }
+        .login-container .forgot-password {
+            color: #00376b;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        .signup-container {
+            width: 38vw;
+            height: 5vh;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .signup-container a {
+            color: #3897f0;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="100">
+    <label for="username"></label>
+    <input type="text" id="username" placeholder="Логін або емейл">
+    <label for="password"></label>
+    <input type="password" id="password" placeholder="Пароль">
+    <button>Увійти</button>
+    <div class="separator">
+        <hr>
+        <span>АБО</span>
+        <hr>
+    </div>
+    <a href="#" class="facebook-login">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="20">Увійти через Facebook
+
+    </a>
+    <a href="#" class="forgot-password">Забули пароль?</a>
+</div>
+<div class="signup-container">
+    <span>Не маєте облікового запису?</span>
+    <a href="#">Зареєструйся</a>
+</div>
+</body>
+</html>
